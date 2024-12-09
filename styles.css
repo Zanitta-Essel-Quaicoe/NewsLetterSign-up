@@ -1,6 +1,8 @@
 *{
   padding: 0;
   margin: 0;
+  overflow: hidden;
+
 }
 
 
@@ -8,6 +10,8 @@
 body{
   background: #242742;
   width: 100%;
+ 
+
   
 }
 .bullet li {
@@ -19,14 +23,20 @@ body{
 }
 
 .main{
- display: flex;
+  display: flex;
   width: 100%;
   max-width: 928px;
-  height: 641px;
   margin: auto;
   
 }
 
+.content{
+  background: white;
+
+}
+
+@media (min-width:729px) {
+  
 .content {
   overflow: hidden;
   position: absolute;
@@ -42,10 +52,12 @@ body{
   padding: 24px;
   border-radius: 20px;
 }
+  
+}
 
 .left-side p{
   width: 100%;
-  max-width: 376px;
+  max-width: 375px;
   font-family: 'roboto-regular';
   font-size: 16px;
   line-height: 24px;
@@ -54,7 +66,7 @@ body{
 .left-side{
    width: 100%;
    max-width: 376px;
-   padding: 50px;
+   
 }
 
 h1{
@@ -93,6 +105,10 @@ label h3{
   font-family: 'roboto-bold';
   font-size: 12px;
   margin-bottom: 8px;
+}
+.form{
+  padding: 10px;
+  margin-right: 10px;
 }
 .form label{
   display: flex;
@@ -194,14 +210,75 @@ section{
   width: 100%;
   max-width: 376px;
 }
-@media (max-width:928px) {
 
+.left-side .mobile-img{
+  display: none;
+}
+@media (max-width:928px) {
+  
   .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
+  
+  
+}
+
+@media (max-width:450px) {
+  body{
+    background: #ffffff;
+  }
+  .right-side{
+    display: none;
+  }
+
+  .left-side .mobile-img{
+    display: flex;
+   
+  }
+  .success{
+    background: transparent;
+    height: auto;
+  }
+  
+.success img{
+  margin-bottom: 30px;
+}
+  .success-main{
+    
+    position: absolute;
+    top: 40%;
+
+  }
+  
+
+  #dismiss-btn{
+   margin-top: 200px;
+
+  }
+
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    padding: 10px;
+  }
+
+  
+
+
+  .left-side{
+    justify-content: center;
+    max-width: 375px;
+  }
+
+
+  
   
 }
 @font-face {
