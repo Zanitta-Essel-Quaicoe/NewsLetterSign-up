@@ -1,7 +1,7 @@
 *{
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -10,8 +10,8 @@
 body{
   background: #242742;
   width: 100%;
- 
-
+  scrollbar-width: auto;
+  overflow-x: hidden;
   
 }
 .bullet li {
@@ -23,6 +23,7 @@ body{
 }
 
 .main{
+  
   display: flex;
   width: 100%;
   max-width: 928px;
@@ -40,7 +41,7 @@ body{
     padding-left: 20px;
   }
 .content {
-  overflow: hidden;
+ 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -66,6 +67,7 @@ body{
   color: #242742;
 }
 .left-side{
+ 
    width: 100%;
    max-width: 376px;
    
@@ -233,6 +235,10 @@ section{
   }
   .right-side{
     display: none;
+  }
+
+  .left-side{
+    height: 100vh;
   }
 
   .left-side .mobile-img{
