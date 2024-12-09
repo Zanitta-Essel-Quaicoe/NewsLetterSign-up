@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      `
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main" id="main">
+      <div class="content">
+        <div class="left-side">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+          <ul class="bullet">
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <span>Product discovery and building what matters</span>
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <span> Measuring to ensure updates are a success</span>
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <span> And much more! Email address</span>
+            </li>
+          </ul>
+
+          <div class="form">
+            <label for="email">
+             <div class="error-message"> <h3>Email address</h3> <span id="error">Valid email required</span></div>
+              <input id="email" type="email" placeholder=" email@company.com" required />
+              <button id="subscribe-btn">Subscribe to monthly newsletter</button>
+            </label>
+          </div>
+        </div>
+        <div class="right-side">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Sign-up form start -->
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <div class="success-main" id="success-main">
+      <div class="success">
+        <section>
+          <img src="./assets/images/icon-success.svg" alt="" />
+        <h2>Thanks for subscribing!</h2>
+        <p class="success-message">
+          A confirmation email has been sent to
+          <span id="success-email"></span>. Please open it and click the button inside to
+          confirm your subscription. Dismiss message
+        </p>
+  
+        <button id="dismiss-btn"> Dismiss message</button>
+        </section>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <!-- Success message end -->
+  </body>
+</html>
